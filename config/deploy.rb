@@ -8,7 +8,7 @@ set :repository, "git@github.com:Francieudo/appservico.git"
 set :branch, "master"
 set :use_sudo, true
 
-server "comentariosapp.cloudapp.net", :web, :app, :db, primary: true
+server "servicoapp.cloudapp.net", :web, :app, :db, primary: true
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
 default_run_options[:pty] = true
