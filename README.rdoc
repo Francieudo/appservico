@@ -1,0 +1,57 @@
+== README
+
+API USAGE DOCUMENT
+
+*Developer:
+  Francieudo Freitas/Anderson Pinheiro
+
+*Content Type:
+  application/json
+
+*Body:
+  You can pass json data in Body
+  
+  sample json body:
+   {
+     "id_photo" : "4", 
+     "name" : "myname", 
+     "title" : "mytitle",
+     "body" : "mybodymybody mybody"
+   }
+
+  NOTE : Content Type should be set  to application/json for json data in body
+
+API Requests:
+
+ *listing comments
+  url: http://localhost:3000/comments
+  method: GET
+  body : not needed
+
+ *Comments listing photos
+  url: http://0.0.0.0:3000/comments/commentsphoto/:id_photo
+  method: GET
+  body : not needed
+  
+ *Retrieving Comment detail
+  url: http://localhost:3000/comments/:id
+  method: GET
+  body : not needed
+
+ *creating comments
+ url: http://localhost:3000/comments
+ method: Post
+ Body : It can be json
+
+ NOTE: attributes required=> id_photo, name, title, body
+
+ *Updating comment
+ url: http://localhost:3000/comments/:id
+ method: PUT
+ Body : It can be json
+
+ *Deleting comment
+ url: http://localhost:3000/comments/:id
+ method: DELETE
+ body : not needed
+
